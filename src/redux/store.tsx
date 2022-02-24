@@ -1,7 +1,7 @@
 import { createStore } from "redux"
-import Reducer from "./reducer"
 import { API_KEY, API_URL, API_VERSION } from "helpers"
 import currentDate from "utils/currentDateUTCFormatted"
+import Reducer from "./reducer"
 
 export const initialState: any = {
   typeOfDisplay: "recentMovies",

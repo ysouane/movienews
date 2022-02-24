@@ -38,6 +38,7 @@
     "react-hooks/rules-of-hooks": "error",
     "react/jsx-one-expression-per-line": "off",
     "react-hooks/exhaustive-deps": "warn",
+    "no-restricted-exports": "off",
     "object-curly-newline": "off",
     "implicit-arrow-linebreak": "off",
     "quotes": ["error", "double"],
