@@ -21,6 +21,7 @@ const MovieList = (props: any) => {
   const url = useSelector(checkUrl)
   const page = useRef(1)
   const [data, setData] = useState<any>([])
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isLoading, setLoading] = useState(false)
   const [favorites, setFavorites] = useState<any>([])
 
