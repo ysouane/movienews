@@ -1,0 +1,28 @@
+@import 'styles/variables';
+
+.movieList {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: $white;
+
+  &__selectDisplay {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+  }
+
+  &__card {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2%;
+
+    @media screen and (min-width: $breakpoints-md) {
+      flex-direction: row;
+    }
+  }
+}

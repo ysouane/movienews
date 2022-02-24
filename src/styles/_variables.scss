@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'RobotoCondensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../font/Roboto_Condensed/RobotoCondensed-Regular.ttf'),
+}
+
+/* Typography */
+$font-family-base: RobotoCondensed,
+Arial,
+sans-serif;
+
+/* Colors */
+$black: #000;
+$white: #fff;
+
+/* Breakpoints */
+$breakpoints: (xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px);
+
+$breakpoints-xl: map-get($map: $breakpoints, $key: xl);
+$breakpoints-md: map-get($map: $breakpoints, $key: md);
