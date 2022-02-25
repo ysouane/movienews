@@ -1,6 +1,7 @@
 # Movie News
 
-Site permettant d'afficher une liste de films (du plus récent au plus ancien, les plus populaire et la possibilité de les enregistrer dans des favoris).
+Site permettant d'afficher une liste de films provenant de l'api du site [The Movie DB](https://www.themoviedb.org/)</br>
+(du plus récent au plus ancien, les plus populaire et la possibilité de les enregistrer dans des favoris).
 
 La stack: React via create-react-app, Typescript, Redux, Sass<br/>
 Librairie: date-fns<br/>
@@ -18,7 +19,7 @@ Une fois le répo cloner ou télécharger, via le dossier de l'application lance
 ### `npm install`
 
 Ensuite créer à la racine du dossier un fichier .env qui devra contenir : 
->**REACT_APP_THEMOVIEDB_API_KEY=*************************<br/>
+>**REACT_APP_THEMOVIEDB_API_KEY=*********************** <br/>
 >**REACT_APP_THEMOVIEDB_API_URL=https://api.themoviedb.org**<br/>
 >**REACT_APP_THEMOVIEDB_API_VERSION=3**<br/>
 
