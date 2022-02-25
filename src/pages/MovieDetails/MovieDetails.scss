@@ -47,6 +47,7 @@
 
   &__overview {
     margin: 1rem;
+    text-align: justify;
 
     @media screen and (min-width: $breakpoints-md) {
       width: 60%;
