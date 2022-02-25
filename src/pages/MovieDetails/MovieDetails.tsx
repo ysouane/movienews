@@ -94,15 +94,15 @@ const MovieDetails = () => {
 
           <div className="movieDetails__overview">
             <p>
-              Titre du film:
+              Titre du film:{" "}
               {data.original_title}
             </p>
             <p>
-              Date de sortie:
+              Date de sortie:{" "}
               {data.release_date}
             </p>
             <p>
-              Résumé:
+              Résumé:{" "}
               {data.overview ? data.overview : "Pas de résumé disponible"}
             </p>
 

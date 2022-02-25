@@ -5,6 +5,8 @@
   flex-direction: column;
   color: $white;
   margin: 2rem;
+  border: 2px solid $white;
+  padding: 2rem;
 
   @media screen and (min-width: $breakpoints-md) {
     flex-direction: row;
