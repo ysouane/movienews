@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+# Movie News
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Site permettant d'afficher une liste de films (du plus récent au plus ancien, les plus populaire et la possibilité de les enregistrer dans des favoris).
 
-## Available Scripts
+La stack: React via create-react-app, Typescript, Redux, Sass<br/>
+Librairie: date-fns<br/>
+Test: Jest / react-test-renderer<br/>
+Linter/Formateur: Eslint / Prettier<br/>
 
-In the project directory, you can run:
+## Version en ligne du site
+Une version en ligne du site est disponible à cette adresse :
 
-### `npm start`
+**[Movie News](https://movienews-hrmu32ev4-ysouane.vercel.app/)**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation et configuration du projet
+Une fois le répo cloner ou télécharger, via le dossier de l'application lancer via un terminal la commande suivante : 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `npm install`
 
-### `npm test`
+Ensuite créer à la racine du dossier un fichier .env qui devra contenir : 
+>**REACT_APP_THEMOVIEDB_API_KEY=*************************<br/>
+>**REACT_APP_THEMOVIEDB_API_URL=https://api.themoviedb.org**<br/>
+>**REACT_APP_THEMOVIEDB_API_VERSION=3**<br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Lancement du site
 
-### `npm run build`
+Des scripts sont configurés dans la package.json afin de les lancer automatiquement via un IDE
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://user-images.githubusercontent.com/97733746/155627505-4da24d06-83ec-4251-867f-77fce695d8f6.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Utiliser [http://localhost:3000](http://localhost:3000) pour accéder au site via le navigateur
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Structure du site
+A la racine se trouve les fichiers de configuration de :
 
-### `npm run eject`
+- **Eslint: .eslintrc.json**
+- **Prettier: .prettierrc**
+- **Typescript: tsconfig.json**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Ensuite on retrouve le repertoire src/ dans lequel on va retrouver l'ensemble du code du site
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+> src<br/>
+src\components<br/>
+src\font<br/>
+src\helpers<br/>
+src\pages<br/>
+src\redux<br/>
+src\styles<br/>
+src\utils<br/>
+src\App.test.tsx<br/>
+src\App.tsx<br/>
+src\index.tsx<br/>
+src\react-app-env.d.ts<br/>
+src\setupTests.ts<br/>
