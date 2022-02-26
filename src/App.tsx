@@ -10,7 +10,7 @@ const App = () => {
   const [backToTopVisibility, setBackToTopVisibility] = useState(false)
   const listInnerRef = useRef() as React.MutableRefObject<HTMLDivElement>
 
-  const onScroll = () => {
+  const displayMoreMoviesAndBackToTopIcon = () => {
     if (listInnerRef.current) {
       const { scrollTop, scrollHeight, clientHeight } = listInnerRef.current
 
@@ -28,8 +28,23 @@ const App = () => {
     }
   }
 
+  const displayMoreMoviesForBigScreen = () => {
+    const heightOfNavigationWindow = window.innerHeight
+
+    if (heightOfNavigationWindow > 1052) {
+      setReachedBottom(true)
+    } else {
+      setReachedBottom(false)
+    }
+  }
+
   return (
-    <div className="App" ref={listInnerRef} onScroll={onScroll}>
+    <div
+      className="App"
+      ref={listInnerRef}
+      onScroll={displayMoreMoviesAndBackToTopIcon}
+      onWheel={displayMoreMoviesForBigScreen}
+    >
       <BrowserRouter>
         <Header />
         <Routes>
