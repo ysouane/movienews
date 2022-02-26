@@ -11,7 +11,7 @@ Linter/Formateur: Eslint / Prettier<br/>
 ## Version en ligne du site
 Une version en ligne du site est disponible à cette adresse :
 
-**[Movie News](https://movienews-hrmu32ev4-ysouane.vercel.app/)**
+**[Movie News](https://movienews.vercel.app/)**
 
 ## Installation et configuration du projet
 Une fois le répo cloner ou télécharger, via le dossier de l'application lancer via un terminal la commande suivante : 
